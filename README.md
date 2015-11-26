@@ -1,4 +1,4 @@
-# VerklegtHopur23
+﻿# VerklegtHopur23
 Verklegt forrit fyrir áfanga
 
 //TODO: Skráning
@@ -23,3 +23,5 @@ Verklegt forrit fyrir áfanga
 //Þegar listinn er birtur, skal bjóða notandanum að velja hvernig hann skuli raðaður.
 
 // breytingar lala
+
+// Halló 
