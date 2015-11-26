@@ -22,4 +22,4 @@ Verklegt forrit fyrir áfanga
 //TODO: Röðun
 //Þegar listinn er birtur, skal bjóða notandanum að velja hvernig hann skuli raðaður.
 
-// breytingar lala
+// breytingar lala this is a update
