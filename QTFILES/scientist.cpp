@@ -14,10 +14,6 @@ scientist::scientist()
     
 }
 
-scientist::scientist()
-{
-
-}
 
 scientist::scientist(string name, bool sex, string doB, string doD)
 {
