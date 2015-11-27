@@ -29,7 +29,10 @@ void addToList(vector<scientist>& db){
 
 void listTheList(vector<scientist>& db){
 
-    cout << db[0].returnName();
+    cout << db[0].returnName() << endl;
+    cout << db[0].returnSex() << endl;
+    cout << db[0].dateofBirth() << endl;
+    cout << db[0].dateofDeath() << endl;
 
 }
 
@@ -48,7 +51,7 @@ int main(int argc, char *argv[])
         cin >> select;
         switch(select){
             case 1:
-                //listItUp(db);
+                listTheList(db);
                 break;
             case 2:
                 addToList(db);

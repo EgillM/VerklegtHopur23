@@ -33,3 +33,13 @@ bool scientist::returnSex()
         return true;
 }
 
+string scientist::dateofBirth()
+{
+    return doB;
+}
+
+string scientist::dateofDeath()
+{
+    return doD;
+}
+
