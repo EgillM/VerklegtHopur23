@@ -18,7 +18,7 @@ public:
     string returnName();
     bool returnSex();
     string dateofBirth();
-    string dataofDeath();
+    string dateofDeath();
 };
 
 #endif // SCIENTIST_H
