@@ -5,16 +5,19 @@
 
 using namespace std;
 
-class scientist
+scientist::scientist()
 {
-private:
-    string name;
-    bool sex;
-    time_t doB;
-    time_t doD;
-public:
-    string returnName();
-    bool returnSex();
-    time_t dateofBirth();
-    time_t dataofDeath();
-};
+    name = "John Doe";
+    sex = 0;
+    doB = time();
+    
+}
+
+bool scientist::returnSex()
+{
+    if(sex == 0)
+        return false;
+    else
+        return true;
+}
+
