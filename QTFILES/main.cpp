@@ -35,10 +35,10 @@ void listTheList(vector<scientist>& db){
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
-    vector<scientist> db;
+    //QCoreApplication a(argc, argv);
+    vector<string> db(120);
     int select = 25;
-	  cout << "This is commandline interface for a CS scienctist program" << endl;
+      cout << "This is commandline interface for a CS scienctist program" << endl;
     while (select != 0){
         cout << "1. List all scientists" << endl << "2. Add new scientist" << endl << "3. Remove scientist" << endl << "4. Search by name" << endl << "0. Quit the application" << endl;
         cin >> select;
@@ -55,4 +55,6 @@ int main(int argc, char *argv[])
     }
     //return 0;
     return a.exec();
+
+    //return a.exec();
 }
