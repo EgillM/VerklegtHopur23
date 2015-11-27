@@ -14,7 +14,10 @@ scientist::scientist()
     
 }
 
-scientist::scientist(string Sname, bool Ssex, string SdoB, string SdoD)
+
+
+scientist::scientist(string name, bool sex, string doB, string doD)
+
 {
     name = Sname;
     sex = Ssex;
