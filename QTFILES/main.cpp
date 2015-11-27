@@ -29,14 +29,14 @@ void addToList(vector<scientist>& db){
 
 void listTheList(vector<scientist>& db){
 
-    cout << db[0].returnName();
+
 
 }
 
 int main(int argc, char *argv[])
 {
-    //QCoreApplication a(argc, argv);
-    vector<string> db(120);
+    QCoreApplication a(argc, argv);
+    vector<scientist> db;
     int select = 25;
       cout << "This is commandline interface for a CS scienctist program" << endl;
     while (select != 0){
