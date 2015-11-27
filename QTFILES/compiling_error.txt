@@ -1,0 +1,41 @@
+main.cpp: In function 'int currentLength(std::vector<std::basic_string<char> >&)':
+main.cpp:12:30: error: no matching function for call to 'getline(std::ifstream&, int&)'
+     while(getline(dataBase, i) != ""){
+                              ^
+main.cpp:12:30: note: candidates are:
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:53:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from main.cpp:2:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.tcc:1068:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     getline(basic_istream<_CharT, _Traits>& __in,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.tcc:1068:5: note:   template argument deduction/substitution failed:
+main.cpp:12:30: note:   mismatched types 'std::basic_string<_CharT, _Traits, _Alloc>' and 'int'
+     while(getline(dataBase, i) != ""){
+                              ^
+In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,
+                 from main.cpp:2:
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2793:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     getline(basic_istream<_CharT, _Traits>& __is,
+     ^
+c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.h:2793:5: note:   template argument deduction/substitution failed:
+main.cpp:12:30: note:   mismatched types 'std::basic_string<_CharT, _Traits, _Alloc>' and 'int'
+     while(getline(dataBase, i) != ""){
+                              ^
+main.cpp: In function 'void addToList(std::vector<std::basic_string<char> >&)':
+main.cpp:34:5: error: 'CURR_PLACE' was not declared in this scope
+     CURR_PLACE += 4;
+     ^
+main.cpp: In function 'void listItUp(std::vector<std::basic_string<char> >&)':
+main.cpp:44:26: error: 'CURR_PLACE' was not declared in this scope
+     for (int i = 0; i <= CURR_PLACE; i++) {
+                          ^
