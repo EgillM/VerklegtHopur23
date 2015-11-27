@@ -8,7 +8,7 @@ using namespace std;
 scientist::scientist()
 {
     name = "John Doe";
-    sex = 1;
+    sex = "male";
     doB = QDate(2012,01,01);
     doD = QDate(2013,01,01);
     
@@ -16,7 +16,7 @@ scientist::scientist()
 
 
 
-scientist::scientist(string Sname, bool Ssex, QDate SdoB, QDate SdoD)
+scientist::scientist(string Sname, string Ssex, QDate SdoB, QDate SdoD)
 
 {
     name = Sname;
@@ -31,12 +31,9 @@ string scientist::returnName()
     return name;
 }
 
-bool scientist::returnSex()
+string scientist::returnSex()
 {
-    if(sex == 0)
-        return false;
-    else
-        return true;
+    return sex;
 }
 
 QDate scientist::dateofBirth()

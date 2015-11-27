@@ -9,14 +9,14 @@ class scientist
 {
 private:
     string name;
-    bool sex;
+    string sex;
     QDate doB;
     QDate doD;
 public:
     scientist();
-    scientist(string name, bool sex, QDate doB, QDate doD);
+    scientist(string name, string sex, QDate doB, QDate doD);
     string returnName();
-    bool returnSex();
+    string returnSex();
     QDate dateofBirth();
     QDate dateofDeath();
 };

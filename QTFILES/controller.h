@@ -9,6 +9,7 @@ public:
     void getDB();
     void functionHandler(int n);
     void addScientist();
+    void writeToDB(scientist guy);
 };
 
 #endif // CONTROLLER_H
