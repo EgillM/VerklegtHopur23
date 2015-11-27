@@ -40,12 +40,8 @@ void listTheList(vector<scientist>& db){
 int main(int argc, char *argv[])
 {
     //QCoreApplication a(argc, argv);
-    vector<scientist> db(120);
     view newView;
     newView.displayInterface();
-
-
-
 
     return 0;
 }
