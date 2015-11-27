@@ -9,7 +9,8 @@ scientist::scientist()
 {
     name = "John Doe";
     sex = 0;
-    doB = time();
+    doB = "12:12:2012";
+    doD = "13:01:2012";
     
 }
 
@@ -18,7 +19,7 @@ scientist::scientist()
 
 }
 
-scientist::scientist(string name, bool sex, time_t doB, time_t doD)
+scientist::scientist(string name, bool sex, string doB, string doD)
 {
 
 }

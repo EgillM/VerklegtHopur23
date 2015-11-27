@@ -3,16 +3,18 @@
 #include <ctime>
 #include <string>
 
+using namespace std;
+
 class scientist
 {
 private:
     string name;
     bool sex;
-    time_t doB;
-    time_t doD;
+    string doB;
+    string doD;
 public:
     scientist();
-    scientist(string name, bool sex, time_t doB, time_t doD);
+    scientist(string name, bool sex, string doB, string doD);
     string returnName();
     bool returnSex();
     string dateofBirth();
