@@ -7,13 +7,14 @@
 using namespace std;
 
 void controller::getDB(){
-
+    model DB;
+    DB.retDB();
 }
 
 void controller::functionHandler(int n){
     switch(n){
         case 1:
-            cout << "testing";
+            getDB();
     }
 }
 

@@ -22,9 +22,7 @@ void view::displayInterface()
              << "4. Search by name" << endl
              << "0. Quit the application" << endl;
         cin >> select;
-
         cont.functionHandler(select);
-
     }
 }
 

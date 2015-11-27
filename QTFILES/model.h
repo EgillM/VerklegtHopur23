@@ -5,7 +5,7 @@
 class model
 {
 public:
-    model();
+    void retDB();
 };
 
 #endif // MODEL_H
