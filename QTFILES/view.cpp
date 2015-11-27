@@ -1,5 +1,6 @@
 #include <iostream>
 #include "view.h"
+#include "controller.h"
 #include <string>
 
 using namespace std;
@@ -11,6 +12,7 @@ view::view()
 
 void view::displayInterface()
 {
+    controller cont;
     int select = 25;
       cout << "This is commandline interface for a CS scientist program" << endl;
     while (select != 0){
@@ -20,21 +22,9 @@ void view::displayInterface()
              << "4. Search by name" << endl
              << "0. Quit the application" << endl;
         cin >> select;
-        switch(select){
-            case 1:
-                //functionHandler(select);
-                break;
-            case 2:
-                //functionHandler(select);
-                break;
-            case 3:
-                //functionHandler(select);
-                break;
-            case 4:
-                //functionHandler(select);
-            default:
-                continue;
-        }
+
+        cont.functionHandler(select);
+
     }
 }
 
