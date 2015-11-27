@@ -5,6 +5,8 @@
 #include <string>
 #include <QDateTime>
 #include <QString>
+#include <Qfile>
+#include <QTextStream>
 #include <fstream>
 
 using namespace std;
@@ -16,7 +18,7 @@ void controller::getDB(){
 
 void controller::addScientist(){
     string name = "";
-    bool sex = 0;
+    string sex = "";
     int bDay = 0;
     int bMonth = 0;
     int bYear = 0;
@@ -28,7 +30,7 @@ void controller::addScientist(){
 
     cout << "Write a name for the scientist: ";
     cin >> name;
-    cout << "Write 0 for female and 1 for male: ";
+    cout << "Write 'female' for female and 'male' for male: ";
     cin >> sex;
     cout << "Write the Day of the date of birth for your scientist: ";
     cin >> bDay;
@@ -45,13 +47,11 @@ void controller::addScientist(){
         cin >> dYear;
     }
     else{
-        dDay, dMonth, dYear = 1;
+        dDay = 1, dMonth = 1, dYear = 1;
     }
 
     doB = QDate(bYear, bMonth, bDay);
     doD = QDate(dYear, dMonth, dDay);
-
-    cout << doD.toString().toStdString() << endl;
     scientist newScientist = scientist(name, sex, doB, doD);
 
     writeToDB(newScientist);
@@ -59,13 +59,13 @@ void controller::addScientist(){
 }
 
 void controller::writeToDB(scientist guy){
-    ofstream appendGuy;
-    string stuff = "";
-    appendGuy.open("database.txt", ios::app);
-
-    stuff = guy.returnName() + "\t" + guy.returnSex() + "\t" + guy.dateofBirth().toString().toStdString() + "\t" + guy.dateofDeath().toString().toStdString();
-
-    cout << stuff;
+    QFile file("database.txt");
+    string str = "\"" + guy.returnName() + "\"\t\"" + guy.returnSex() + "\"\t\"" + guy.dateofBirth().toString().toStdString() + "\"\t\"" + guy.dateofDeath().toString().toStdString() + "\"";
+    //char* arr = str;
+    if(file.open(QIODevice::ReadWrite)){
+        QTextStream stream(&file);
+        stream << "\"";
+    }
 }
 
 void controller::functionHandler(int n){
