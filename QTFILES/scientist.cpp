@@ -9,14 +9,14 @@ scientist::scientist()
 {
     name = "John Doe";
     sex = 1;
-    doB = "12:12:2012";
-    doD = "13:01:2012";
+    doB = QDate(2012,01,01);
+    doD = QDate(2013,01,01);
     
 }
 
 
 
-scientist::scientist(string Sname, bool Ssex, string SdoB, string SdoD)
+scientist::scientist(string Sname, bool Ssex, QDate SdoB, QDate SdoD)
 
 {
     name = Sname;
@@ -39,12 +39,12 @@ bool scientist::returnSex()
         return true;
 }
 
-string scientist::dateofBirth()
+QDate scientist::dateofBirth()
 {
     return doB;
 }
 
-string scientist::dateofDeath()
+QDate scientist::dateofDeath()
 {
     return doD;
 }

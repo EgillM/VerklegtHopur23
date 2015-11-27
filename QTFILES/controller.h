@@ -8,6 +8,7 @@ class controller
 public:
     void getDB();
     void functionHandler(int n);
+    void addScientist();
 };
 
 #endif // CONTROLLER_H

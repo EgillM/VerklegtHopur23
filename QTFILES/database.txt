@@ -1,2 +1,2 @@
-1\t\"Alan M. Turing"\t,"Male"\t"23:06:1912"\t"07:06:1954"
-2\t"John von Neumann"\t"Male"\t"28:12:1903"\t"08:02:1957"
+"Alan M. Turing"\t,1\t"23:06:1912"\t"07:06:1954"
+"John von Neumann"\t1\t"28:12:1903"\t"08:02:1957"

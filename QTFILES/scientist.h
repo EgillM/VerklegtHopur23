@@ -1,6 +1,6 @@
 #ifndef SCIENTIST_H
 #define SCIENTIST_H
-#include <ctime>
+#include <QDateTime>
 #include <string>
 
 using namespace std;
@@ -10,15 +10,15 @@ class scientist
 private:
     string name;
     bool sex;
-    string doB;
-    string doD;
+    QDate doB;
+    QDate doD;
 public:
     scientist();
-    scientist(string name, bool sex, string doB, string doD);
+    scientist(string name, bool sex, QDate doB, QDate doD);
     string returnName();
     bool returnSex();
-    string dateofBirth();
-    string dateofDeath();
+    QDate dateofBirth();
+    QDate dateofDeath();
 };
 
 #endif // SCIENTIST_H

@@ -21,10 +21,9 @@ void model::retDB(){
             break;
         }
         else{
-            currList = line.split("\t");
+            currList = line.split('\t');
             line = currList[2];
-            check = line.toLocal8Bit().constData();
-            cout << check;
+            cout << line.toStdString();
         }
     }
 }
