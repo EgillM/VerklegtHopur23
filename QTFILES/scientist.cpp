@@ -13,6 +13,21 @@ scientist::scientist()
     
 }
 
+scientist::scientist()
+{
+
+}
+
+scientist::scientist(string name, bool sex, time_t doB, time_t doD)
+{
+
+}
+
+string scientist::returnName()
+{
+    return name;
+}
+
 bool scientist::returnSex()
 {
     if(sex == 0)

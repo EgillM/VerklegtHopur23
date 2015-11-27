@@ -15,8 +15,8 @@ public:
     scientist(string name, bool sex, time_t doB, time_t doD);
     string returnName();
     bool returnSex();
-    time_t dateofBirth();
-    time_t dataofDeath();
+    string dateofBirth();
+    string dataofDeath();
 };
 
 #endif // SCIENTIST_H
